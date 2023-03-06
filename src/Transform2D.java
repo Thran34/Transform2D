@@ -7,7 +7,7 @@ public class Transform2D extends JPanel {
         var frame = new JFrame("My Pentagon");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(new Transform2D());
-        frame.setSize(500, 500);
+        frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
@@ -23,8 +23,8 @@ public class Transform2D extends JPanel {
         var angle = 2 * Math.PI / 5;
         for (int i = 0; i < 5; i++) {
             var theta = i * angle + Math.PI / 2;
-            xPoints[i] = x + (int) (100 * Math.cos(theta));
-            yPoints[i] = y - (int) (100 * Math.sin(theta));
+            xPoints[i] = x + (int) (150 * Math.cos(theta));
+            yPoints[i] = y - (int) (150 * Math.sin(theta));
         }
         g2d.setColor(Color.RED);
         g2d.drawPolygon(xPoints, yPoints, 5);
